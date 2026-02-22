@@ -815,6 +815,10 @@ nav a:hover::after {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
   nav ul {
     gap: 20px;
   }
