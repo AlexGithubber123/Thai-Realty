@@ -7,7 +7,7 @@ html {
   background-position: center 65%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 
 body {
@@ -860,6 +860,10 @@ nav a:hover::after {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  html {
+    background-attachment: scroll;
+  }
+
   nav {
     padding: 16px 0;
   }
