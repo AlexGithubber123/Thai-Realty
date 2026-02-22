@@ -474,364 +474,6 @@ nav a:hover::after {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* ABOUT PAGE STYLES */
-.page-title {
-  font-size: 72px;
-  font-family: 'Satisfy', cursive;
-  margin: 0;
-  font-weight: 400;
-}
-
-/* STORY SECTION */
-.story-section {
-  min-height: 100vh;
-  padding: 100px 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.story-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  max-width: 1200px;
-  align-items: center;
-  width: 100%;
-}
-
-.story-text h2 {
-  font-size: 48px;
-  font-family: 'Satisfy', cursive;
-  margin-bottom: 30px;
-  font-weight: 400;
-}
-
-.story-text p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  opacity: 0.9;
-}
-
-.story-image {
-  height: 400px;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
-/* MISSION & VISION SECTION */
-.mission-section {
-  min-height: 100vh;
-  padding: 100px 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(102, 126, 234, 0.2));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.mission-section h2 {
-  font-size: 48px;
-  font-family: 'Satisfy', cursive;
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 400;
-}
-
-.mission-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.mission-card {
-  background-color: rgba(255, 255, 255, 0.08);
-  padding: 40px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.mission-card:hover {
-  transform: translateY(-10px);
-}
-
-.mission-card h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #ffd700;
-}
-
-.mission-card p {
-  font-size: 16px;
-  opacity: 0.85;
-  line-height: 1.6;
-}
-
-/* TEAM SECTION */
-.team-section {
-  min-height: 100vh;
-  padding: 100px 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.team-section h2 {
-  font-size: 48px;
-  font-family: 'Satisfy', cursive;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
-
-.section-subtitle {
-  text-align: center;
-  font-size: 18px;
-  opacity: 0.8;
-  margin-bottom: 60px;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.team-member {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 30px 20px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-10px);
-}
-
-.member-image {
-  height: 250px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.team-member h3 {
-  font-size: 20px;
-  margin: 15px 0 5px 0;
-}
-
-.position {
-  font-size: 16px;
-  color: #ffd700;
-  margin: 5px 0 15px 0;
-  font-weight: 600;
-}
-
-.bio {
-  font-size: 14px;
-  opacity: 0.8;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* ACHIEVEMENTS SECTION */
-.achievements-section {
-  min-height: 80vh;
-  padding: 100px 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(118, 75, 162, 0.2));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.achievements-section h2 {
-  font-size: 48px;
-  font-family: 'Satisfy', cursive;
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 400;
-}
-
-.achievements-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.achievement {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 40px 20px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.achievement-number {
-  font-size: 48px;
-  color: #ffd700;
-  margin: 0 0 10px 0;
-  font-weight: 700;
-}
-
-.achievement p {
-  font-size: 16px;
-  opacity: 0.9;
-  margin: 0;
-}
-
-/* AWARDS SECTION */
-.awards-section {
-  min-height: 80vh;
-  padding: 100px 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.awards-section h2 {
-  font-size: 48px;
-  font-family: 'Satisfy', cursive;
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 400;
-}
-
-.awards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.award-card {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.08);
-  padding: 40px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.award-card:hover {
-  transform: translateY(-10px);
-}
-
-.award-icon {
-  font-size: 48px;
-  margin-bottom: 15px;
-}
-
-.award-card h3 {
-  font-size: 20px;
-  margin: 15px 0 10px 0;
-  color: #ffd700;
-}
-
-.award-card p {
-  font-size: 14px;
-  opacity: 0.8;
-  margin: 0;
-}
-
-/* WHY CHOOSE US SECTION */
-.why-choose-section {
-  min-height: 100vh;
-  padding: 100px 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.why-choose-section h2 {
-  font-size: 48px;
-  font-family: 'Satisfy', cursive;
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 400;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.feature {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 40px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.feature:hover {
-  transform: translateY(-10px);
-}
-
-.feature h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
-  color: #ffd700;
-}
-
-.feature p {
-  font-size: 16px;
-  opacity: 0.85;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* CTA SECTION */
-.cta-section {
-  min-height: 50vh;
-  padding: 100px 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(102, 126, 234, 0.3));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.cta-section h2 {
-  font-size: 48px;
-  font-family: 'Satisfy', cursive;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
-
-.cta-section p {
-  font-size: 20px;
-  margin-bottom: 40px;
-  opacity: 0.9;
-  max-width: 600px;
-}
-
 /* ANIMATIONS */
 @keyframes fadeInUp {
   from {
@@ -897,10 +539,6 @@ nav a:hover::after {
     font-size: 36px;
   }
 
-  .page-title {
-    font-size: 36px;
-  }
-
   .hero-subtitle {
     font-size: 15px;
   }
@@ -917,14 +555,7 @@ nav a:hover::after {
   .services-section,
   .about-section,
   .testimonials-section,
-  .contact-section,
-  .story-section,
-  .mission-section,
-  .team-section,
-  .achievements-section,
-  .awards-section,
-  .why-choose-section,
-  .cta-section {
+  .contact-section {
     padding: 80px 20px;
   }
 
@@ -932,14 +563,7 @@ nav a:hover::after {
   .services-section h2,
   .about-section h2,
   .testimonials-section h2,
-  .contact-section h2,
-  .story-text h2,
-  .mission-section h2,
-  .team-section h2,
-  .achievements-section h2,
-  .awards-section h2,
-  .why-choose-section h2,
-  .cta-section h2 {
+  .contact-section h2 {
     font-size: 32px;
     margin-bottom: 40px;
   }
@@ -957,50 +581,13 @@ nav a:hover::after {
     height: 200px;
   }
 
-  .story-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .story-image {
-    height: 200px;
-  }
-
-  .member-image {
-    height: 200px;
-  }
-
   .property-image {
     height: 200px;
-  }
-
-  .mission-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .achievements-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .awards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 480px) {
   #typing {
-    font-size: 28px;
-  }
-
-  .page-title {
     font-size: 28px;
   }
 
@@ -1016,14 +603,7 @@ nav a:hover::after {
   .services-section h2,
   .about-section h2,
   .testimonials-section h2,
-  .contact-section h2,
-  .story-text h2,
-  .mission-section h2,
-  .team-section h2,
-  .achievements-section h2,
-  .awards-section h2,
-  .why-choose-section h2,
-  .cta-section h2 {
+  .contact-section h2 {
     font-size: 24px;
   }
 
@@ -1031,18 +611,7 @@ nav a:hover::after {
   .services-section,
   .about-section,
   .testimonials-section,
-  .contact-section,
-  .story-section,
-  .mission-section,
-  .team-section,
-  .achievements-section,
-  .awards-section,
-  .why-choose-section,
-  .cta-section {
+  .contact-section {
     padding: 60px 16px;
-  }
-
-  .achievements-grid {
-    grid-template-columns: 1fr;
   }
 }
