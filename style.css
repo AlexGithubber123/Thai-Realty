@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url('background.png') center/cover no-repeat fixed;
+  background: url('background.png') center/cover no-repeat scroll;
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -815,10 +815,6 @@ nav a:hover::after {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  body {
-    background-attachment: scroll;
-  }
-
   nav ul {
     gap: 20px;
   }
