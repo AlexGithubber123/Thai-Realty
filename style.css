@@ -4,7 +4,7 @@
 
 html {
   background-image: url('background.png');
-  background-position: center center;
+  background-position: center 65%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
