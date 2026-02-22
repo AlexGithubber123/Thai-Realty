@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Thai Realty</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Satisfy&family=Tangerine:wght@400;700&family=Pacifico&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -9,6 +10,9 @@
 </head>
 <body>
   <nav>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
     <ul>
       <li><a href="home.html#home">HOME</a></li>
       <li><a href="about.html#about">ABOUT</a></li>
@@ -202,5 +206,19 @@
   </footer>
 
   <script src="yes.js"></script>
+  <script>
+    var btn = document.querySelector('.hamburger');
+    var menu = document.querySelector('nav ul');
+    btn.addEventListener('click', function() {
+      menu.classList.toggle('open');
+      btn.classList.toggle('active');
+    });
+    menu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        menu.classList.remove('open');
+        btn.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>

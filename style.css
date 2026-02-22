@@ -75,6 +75,42 @@ nav a:hover::after {
   width: 100%;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
 /* HERO SECTION */
 .hero-section {
   min-height: 100vh;
@@ -170,7 +206,7 @@ nav a:hover::after {
 
 .properties-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -259,7 +295,7 @@ nav a:hover::after {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -507,7 +543,7 @@ nav a:hover::after {
 
 .mission-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -566,7 +602,7 @@ nav a:hover::after {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -739,7 +775,7 @@ nav a:hover::after {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
@@ -823,24 +859,60 @@ nav a:hover::after {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  nav {
+    padding: 16px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
   nav ul {
-    gap: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 20px 0;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
   }
 
   nav a {
-    font-size: 12px;
+    display: block;
+    padding: 14px 0;
+    font-size: 13px;
   }
 
   #typing {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .page-title {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .hero-subtitle {
-    font-size: 18px;
+    font-size: 15px;
+  }
+
+  .stat h3 {
+    font-size: 32px;
+  }
+
+  .price {
+    font-size: 20px;
   }
 
   .properties-section,
@@ -870,7 +942,8 @@ nav a:hover::after {
   .awards-section h2,
   .why-choose-section h2,
   .cta-section h2 {
-    font-size: 36px;
+    font-size: 32px;
+    margin-bottom: 40px;
   }
 
   .contact-content {
@@ -883,7 +956,7 @@ nav a:hover::after {
   }
 
   .about-image {
-    height: 300px;
+    height: 200px;
   }
 
   .story-content {
@@ -892,7 +965,15 @@ nav a:hover::after {
   }
 
   .story-image {
-    height: 300px;
+    height: 200px;
+  }
+
+  .member-image {
+    height: 200px;
+  }
+
+  .property-image {
+    height: 200px;
   }
 
   .mission-grid {
@@ -912,6 +993,58 @@ nav a:hover::after {
   }
 
   .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  #typing {
+    font-size: 28px;
+  }
+
+  .page-title {
+    font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .stat h3 {
+    font-size: 26px;
+  }
+
+  .properties-section h2,
+  .services-section h2,
+  .about-section h2,
+  .testimonials-section h2,
+  .contact-section h2,
+  .story-text h2,
+  .mission-section h2,
+  .team-section h2,
+  .achievements-section h2,
+  .awards-section h2,
+  .why-choose-section h2,
+  .cta-section h2 {
+    font-size: 24px;
+  }
+
+  .properties-section,
+  .services-section,
+  .about-section,
+  .testimonials-section,
+  .contact-section,
+  .story-section,
+  .mission-section,
+  .team-section,
+  .achievements-section,
+  .awards-section,
+  .why-choose-section,
+  .cta-section {
+    padding: 60px 16px;
+  }
+
+  .achievements-grid {
     grid-template-columns: 1fr;
   }
 }
